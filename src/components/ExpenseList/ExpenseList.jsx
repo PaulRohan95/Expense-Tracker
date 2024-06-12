@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "@fontsource/ubuntu";
-import {ReactComponent as Logo} from '../../assets/Delete.svg';
 import './ExpenseList.css';
 
 const ExpenseList = ({ expenses, deleteExpense, updateExpense }) => {
@@ -58,8 +57,7 @@ const ExpenseList = ({ expenses, deleteExpense, updateExpense }) => {
                 <div>
                   <span className="expenseItem">{expense.title}</span>
                   <span className="expenseAmount">₹{expense.amount}</span>
-                  <button onClick={() => deleteExpense(expense.id)}>
-                    <Logo className="logoDelete" /></button>
+                  <button onClick={() => deleteExpense(expense.id)}>Delete</button>
                   <button onClick={() => handleEdit(expense)}>Edit</button>
                 </div>
               )}
