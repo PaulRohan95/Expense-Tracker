@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "@fontsource/ubuntu";
+import ExpenseForm from './components/ExpenseForm/ExpenseForm';
+import ExpenseList from './components/ExpenseList/ExpenseList';
 import './App.css'; 
 
 function App() {
@@ -95,11 +97,13 @@ function App() {
       {showExpenseForm && (
         <div className="modal-expense">
           <div className="modal-content-expense">
+            <ExpenseForm addExpense={addExpense} walletBalance={walletBalance} />
             <button className="btn-cancel" onClick={() => setShowExpenseForm(false)}>Cancel</button>
           </div>
         </div>
       )}
       </div>
+      <ExpenseList expenses={expenses} deleteExpense={deleteExpense} updateExpense={updateExpense} />
     </div>
   );
 }
