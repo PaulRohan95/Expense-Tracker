@@ -1,0 +1,283 @@
+.App {
+  position: fixed;
+  width: 96%;
+  height: 90vh;
+  margin-left: 0.45%;
+  margin-top: 1.5%;
+  padding: 20px;
+  border: 1px solid rgba(155, 155, 155, 1);
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: rgba(59, 59, 59, 1);
+}
+
+.container {
+  width: 100%;
+  height: 269px;
+  top: 94px;
+  left: 32px;
+  border-radius: 15px;
+  background: rgba(98, 98, 98, 1);
+}
+
+h1 {
+  position: relative;
+  top: -3.5%;
+  left: -0.05%;
+  font-family: Ubuntu;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36.77px;
+  text-align: left;  
+  color: rgba(255, 255, 255, 1);  
+}
+
+.texth2 {
+  position: relative;
+  width: 302px;
+  height: 34px;
+  top: 22px;
+  left: 27px;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34.47px;
+  text-align: left;  
+  color: rgba(255, 255, 255, 1);   
+}
+
+.amount{
+  font-weight: 700;
+  color: rgba(157, 255, 91, 1);
+}
+
+.wallet-balance {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 355.41px;
+  height: 181px;
+  top: 140px;
+  margin-left: 60px;
+  border-radius: 15px;   
+  background: rgba(155, 155, 155, 1);
+}
+
+.add-income {
+  position: relative;
+  width: 167.65px;
+  height: 38px;
+  top: 10px;
+  border-radius: 15px;
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);     
+  border: none;
+}
+
+.income-form {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.expense-form, .expense-list, .expense-summary, .expense-trends {
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 538px;
+  height: 164px;
+  top: 16px;
+  left: -221px; 
+  background: rgba(239, 239, 239, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-header {
+  position: relative;
+  width: 178px;
+  height: 34px;
+  top: -13px;
+  left: 11px;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34.47px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);   
+}
+
+input {
+  position: relative;
+  width: 217px;
+  height: 51px;
+  top: -15px;
+  left: -151px;
+  border-radius: 15px;    
+}
+
+.add {
+  position: relative;
+  cursor: pointer;
+  width: 145px;
+  height: 51px;
+  top: -78px;
+  left: 100px;
+  border-radius: 15px; 
+  background: linear-gradient(0deg, #F4BB4A, #F4BB4A);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;  
+  border: none;  
+  color: white;
+}
+
+.cancel {
+  position: relative;
+  cursor: pointer;
+  width: 112px;
+  height: 51px;
+  top: -78px;
+  left: 109px;
+  border-radius: 15px;
+  background: linear-gradient(0deg, #E3E3E3, #E3E3E3);    
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);     
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  color: rgba(0, 0, 0, 1);    
+  border: none; 
+}
+
+.total-expenses {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 355.41px;
+  height: 181px;
+  top: 140px;
+  margin-left: 460px;
+  border-radius: 15px;   
+  background: rgba(155, 155, 155, 1);
+}
+
+.expenseh2 {
+  position: relative;
+  width: 211px;
+  height: 34px;
+  top: 18px;
+  left: 58px;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34.47px;
+  text-align: left; 
+  color: rgba(255, 255, 255, 1); 
+}
+
+.amountExpense {
+  color: rgba(244, 187, 74, 1);
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34.47px; 
+}
+
+.add-expense {
+  position: relative;
+  width: 167.65px;
+  height: 38px;
+  top: 10px;
+  border-radius: 15px;
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%);   
+  border: none; 
+}
+
+.modal-expense {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content-expense {
+  position: relative;
+  width: 538px;
+  height: 335px;
+  top: 16px;
+  left: -221px; 
+  background: rgba(239, 239, 239, 0.85);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.btn-cancel {
+  position: relative;
+  cursor: pointer;
+  width: 112px;
+  height: 51px;
+  top: -188px;
+  left: 51px;
+  border-radius: 15px;
+  background: linear-gradient(0deg, #E3E3E3, #E3E3E3);  
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  input {
+    width: calc(100% - 16px);
+    padding: 8px;
+  }
+}
