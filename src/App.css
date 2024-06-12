@@ -64,6 +64,7 @@ h1 {
 
 .add-income {
   position: relative;
+  cursor: pointer;
   width: 167.65px;
   height: 38px;
   top: 10px;
@@ -215,6 +216,7 @@ input {
 
 .add-expense {
   position: relative;
+  cursor: pointer;
   width: 167.65px;
   height: 38px;
   top: 10px;
