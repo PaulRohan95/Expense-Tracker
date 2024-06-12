@@ -35,7 +35,7 @@ h1 {
   position: relative;
   width: 302px;
   height: 34px;
-  top: 22px;
+  top: 45px;
   left: 27px;
   font-family: Ubuntu;
   font-size: 30px;
@@ -51,12 +51,12 @@ h1 {
 }
 
 .wallet-balance {
-  position: absolute;
+  position: relative;
   text-align: center;
   margin-bottom: 20px;
   width: 355.41px;
   height: 181px;
-  top: 140px;
+  top: 38px;
   margin-left: 60px;
   border-radius: 15px;   
   background: rgba(155, 155, 155, 1);
@@ -67,13 +67,14 @@ h1 {
   cursor: pointer;
   width: 167.65px;
   height: 38px;
-  top: 10px;
+  top: 36px;
   border-radius: 15px;
   font-family: Ubuntu;
   font-weight: 700;
   font-size: 16px;
   background: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);     
   border: none;
+  color: white
 }
 
 .income-form {
@@ -216,7 +217,6 @@ input {
 
 .add-expense {
   position: relative;
-  cursor: pointer;
   width: 167.65px;
   height: 38px;
   top: 10px;
@@ -226,6 +226,8 @@ input {
   font-size: 16px;
   background: linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%);   
   border: none; 
+  color: white;
+  cursor: pointer;
 }
 
 .modal-expense {
@@ -268,18 +270,50 @@ input {
   line-height: 21.79px;
   border: none;
 }
-
 @media (max-width: 768px) {
   .App {
     padding: 10px;
   }
 
-  button {
-    padding: 8px 16px;
+  .wallet-balance,
+  .total-expenses {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .add-income,
+  .add-expense {
+    width: 50%;
+    padding: 10px;
   }
 
   input {
-    width: calc(100% - 16px);
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .texth2,
+  .expenseh2 {
+    font-size: 24px;
+  }
+
+  .amount,
+  .amountExpense {
+    font-size: 24px;
+  }
+
+  .add-income,
+  .add-expense,
+  .add,
+  .cancel,
+  .btn-cancel {
+    width: 50%;
+    font-size: 14px;
     padding: 8px;
+    flex-wrap: wrap;
   }
 }

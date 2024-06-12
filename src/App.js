@@ -69,7 +69,7 @@ function App() {
   return (
     <div className="App">
       <h1>Expense Tracker</h1>
-      <div className='container' />
+      <div className='container'>
       <div className="wallet-balance">
         <h2 className='texth2'>Wallet Balance: <span className='amount'>₹{walletBalance}</span></h2>
         <button className='add-income' onClick={() => setShowIncomeForm(true)}>+ Add Income</button>
@@ -102,6 +102,7 @@ function App() {
           </div>
         </div>
       )}
+      </div>
       <ExpenseList expenses={expenses} deleteExpense={deleteExpense} updateExpense={updateExpense} />
     </div>
   );
