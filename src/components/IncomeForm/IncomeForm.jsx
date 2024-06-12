@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "@fontsource/ubuntu";
 import styles from './IncomeForm.module.css';
 
 const IncomeForm = ({ addIncome }) => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "@fontsource/ubuntu";
 import {ReactComponent as Logo} from '../../assets/Delete.svg';
 import './ExpenseList.css';
 

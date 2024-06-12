@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "@fontsource/ubuntu";
 import ExpenseForm from './components/ExpenseForm/ExpenseForm';
 import ExpenseList from './components/ExpenseList/ExpenseList';
 import './App.css'; 

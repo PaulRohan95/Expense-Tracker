@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "@fontsource/ubuntu";
 import './ExpenseForm.css';
 
 const ExpenseForm = ({ addExpense, walletBalance }) => {
